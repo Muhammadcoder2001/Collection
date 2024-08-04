@@ -1,13 +1,13 @@
 package Collections;
 
 import java.util.ArrayList;
-
-public class Task15 {
+import  java.util.List;
+public class Task16 {
 
     public static void main(String[] args) {
+
         ArrayList<String> list = new ArrayList<>();
 
-        ArrayList<String> list1 = new ArrayList<>();
 
         list.add("Abdulloh");
         list.add("Hafizullo");
@@ -16,18 +16,14 @@ public class Task15 {
         list.add("Habibullo");
         list.add("Samandar");
 
-        list1.add("Abdulloh");
-        list1.add("Hafizullo");
-        list1.add("Sardor");
-        list1.add("Abdulbosit");
-        list1.add("Habibullo");
-        list1.add("Jamshid");
-    ArrayList<String> list2 = new ArrayList<>();
         System.out.println(list);
-        list2.addAll(list);
-        list2.addAll(list1);
-        System.out.println(list1);
+        List <String> list1 = list.subList(0, list.size());
+//        Second Path
+        ArrayList<String> list2 = (ArrayList<String>)list.clone();
         System.out.println(list2);
+
+        System.out.println(list1);
+
 
     }
 }
