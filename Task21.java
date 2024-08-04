@@ -16,6 +16,8 @@ public class Task21 {
 
         Collections.replaceAll(list, "Alijon", "Muhammad");
         System.out.println(list);
+        list.set(1, "Bobur");
+        System.out.println(list);
 
     }
 }
